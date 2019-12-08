@@ -37,3 +37,14 @@ function updateDate () {
 updateDate();
 updateClock(); setInterval('updateClock()', 1000 );
 
+//
+//if time < 9, then style
+//else if time =9, style
+//else style
+
+function colorChange() {
+    var currentTime = new Date().getHours();
+    if (0 <= currentTime&&currentTime < 5) {
+     document.write("<link rel='stylesheet' href='night.css' type='text/css'>"); // basic idea but lets not make a second style sheet
+    }
+
