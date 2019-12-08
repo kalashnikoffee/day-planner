@@ -9,16 +9,62 @@
 
     <title>Document</title>
 </head>
-<body onload="updateClock(); setInterval('updateClock()', 1000 )">
-    <!--CLOCK-->
-    <div class="topclock">
-        <span id="clock">&nbsp;</span>
+<body>
+    <!--DATE & TIME-->
+    <div class="titleBox">
+        
+        <div class="topTitle">
+            <h1>Work Day Scheduler</h1>
+        </div>
+
+         <div class="topClock">
+            <span id="clock">&nbsp;</span>
+        </div>
+
+        <div class="topDate">
+            <span id="date">&nbsp;</span>
+        </div>
+
     </div>
+    <!--DATE & TIME END-->
+
+    <!--ROWS-->
+    <div>
+        <div id="09AMRow" class="timeRow"> <!--Row 1-->
+
+        </div>
+        <div id="10AMRow" class="timeRow"> <!--Row 2-->
+
+        </div>
+        <div id="11AMRow" class="timeRow"> <!--Row 3-->
+
+        </div>
+        <div id="12PMRow" class="timeRow"> <!--Row 4-->
+
+        </div>
+        <div id="01PMRow" class="timeRow"> <!--Row 5-->
+
+        </div>
+        <div id="02PMRow" class="timeRow"> <!--Row 6-->
+
+        </div>
+        <div id="03PMRow" class="timeRow"> <!--Row 7-->
+
+        </div>
+        <div id="04PMRow" class="timeRow"> <!--Row 8-->
+
+        </div>
+        <div id="05PMRow" class="timeRow"> <!--Row 9-->
+
+        </div>
+    </div>
+    <!--ROWS END-->
+
     <!--Title/h1 = "Work Day Scheduler-->
     <!--Display Current Day (optionally, time as well)-->
     <!--Main box or div to contain everything-->
     <!--9 Rows to take input for each hour... 9-5-->
-    <!--3+ columns to each row for time, appointments, and save button-->
+    <!--3+ Columns to each row for time, appointments, and save button-->
     <!--A save button at the end of each row will link to localStorage-->
     
 

@@ -4,24 +4,36 @@
 //display date and time at top of page
 //each row has 3 potential colors = past, present, future
 
-//CLOCK----------------------------------
 
+//DATE & TIME----------------------------------
 function updateClock ( ) {
     var currentTime = new Date ( );
 
-var currentHours = currentTime.getHours ( );
-var currentMinutes = currentTime.getMinutes ( );
-var currentSeconds = currentTime.getSeconds ( );
+    var currentHours = currentTime.getHours ( );
+    var currentMinutes = currentTime.getMinutes ( );
+    var currentSeconds = currentTime.getSeconds ( );
 
-currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+    currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+    currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
 
-var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
-currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+    var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+    currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+    currentHours = ( currentHours == 0 ) ? 12 : currentHours;
 
-var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
 
-document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+    document.getElementById("clock").firstChild.nodeValue = currentTimeString;
 };
+
+function updateDate () {
+    var d = new Date();
+    var monthOfYear = d.getMonth ();
+    var dayOfMonth = d.getDate ();
+    var yearOfOurLord = d.getFullYear();
+    var todaysDate = dayOfMonth + "/" + monthOfYear + "/" + yearOfOurLord;
+    document.getElementById("date").firstChild.nodeValue = todaysDate;
+}; 
+
+updateDate();
+updateClock(); setInterval('updateClock()', 1000 );
 
