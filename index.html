@@ -9,8 +9,11 @@
 
     <title>Document</title>
 </head>
-<body>
-
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+    <!--CLOCK-->
+    <div class="topclock">
+        <span id="clock">&nbsp;</span>
+    </div>
     <!--Title/h1 = "Work Day Scheduler-->
     <!--Display Current Day (optionally, time as well)-->
     <!--Main box or div to contain everything-->
