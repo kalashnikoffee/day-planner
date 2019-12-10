@@ -37,16 +37,7 @@ function updateDate () {
 updateDate();
 updateClock(); setInterval('updateClock()', 1000 );
 
-//
-//if time < 9, then style
-//else if time =9, style
-//else style
-
-// function colorChange() {
-//     var currentTime = new Date().getHours();
-//     if (0 <= currentTime&&currentTime < 5) {
-//      document.write("<link rel='stylesheet' href='night.css' type='text/css'>"); // basic idea but lets not make a second style sheet
-//     }
+//COLOR CHANGE -----------------------------------------------------------------
 
 function nineAMRowColorChage() {
     var currentTime = new Date().getHours();
@@ -173,27 +164,34 @@ function fivePMRowColorChage() {
     }
 }
 fivePMRowColorChage();
-    // if (currentTime == 10){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 11){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 12){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 13){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime ==14){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 15){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 16){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
-    // if (currentTime == 17){
-    //     document.getElementById(id).style.backgroundColor = "#ff0000";
-    // }
+   
+//COLOR CHANGE END -----------------------------------------------------------------
+
+//LOCAL STORAGE SAVE -------------------------------------------------------------
+
+// var saveButton1 = document.querySelector("#button-addon1");
+
+// $("#button-addon1").on("click", function{
+
+// })
+
+document.getElementById("button-addon1").addEventListener("click", function(){
+    var thingthing = document.getElementById("09AMInput").value;
+    localStorage.setItem("Appointment09AM", thingthing);
+    
+    console.log(thingthing);
+});
+
+
+
+// var saveButton2 = document.querySelector("#button-addon2");
+// var saveButton3 = document.querySelector("#button-addon3");
+// var saveButton4 = document.querySelector("#button-addon4");
+// var saveButton5 = document.querySelector("#button-addon5");
+// var saveButton6 = document.querySelector("#button-addon6");
+// var saveButton7 = document.querySelector("#button-addon7");
+// var saveButton8 = document.querySelector("#button-addon8");
+// var saveButton9 = document.querySelector("#button-addon9");
+
+// var hour1Appointment=$("#09AMInput").find("input").value;
+// console.log(hour1Appointment);
