@@ -175,14 +175,98 @@ fivePMRowColorChage();
 
 // })
 
+//BAM OK NOW WE'RE GETTING SOMEWHERE
 document.getElementById("button-addon1").addEventListener("click", function(){
     var thingthing = document.getElementById("09AMInput").value;
     localStorage.setItem("Appointment09AM", thingthing);
-    
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon2").addEventListener("click", function(){
+    var thingthing = document.getElementById("10AMInput").value;
+    localStorage.setItem("Appointment10AM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon3").addEventListener("click", function(){
+    var thingthing = document.getElementById("11AMInput").value;
+    localStorage.setItem("Appointment11AM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon4").addEventListener("click", function(){
+    var thingthing = document.getElementById("12PMInput").value;
+    localStorage.setItem("Appointment12PM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon5").addEventListener("click", function(){
+    var thingthing = document.getElementById("01PMInput").value;
+    localStorage.setItem("Appointment01PM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon6").addEventListener("click", function(){
+    var thingthing = document.getElementById("02PMInput").value;
+    localStorage.setItem("Appointment02PM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon7").addEventListener("click", function(){
+    var thingthing = document.getElementById("03PMInput").value;
+    localStorage.setItem("Appointment03PM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon8").addEventListener("click", function(){
+    var thingthing = document.getElementById("04PMInput").value;
+    localStorage.setItem("Appointment04PM", thingthing);
+
+    console.log(thingthing);
+});
+document.getElementById("button-addon9").addEventListener("click", function(){
+    var thingthing = document.getElementById("05PMInput").value;
+    localStorage.setItem("Appointment05PM", thingthing);
+
     console.log(thingthing);
 });
 
-
+function loadSaved1() {
+    var x = localStorage.getItem("Appointment09AM");
+    document.getElementById("09AMInput").value = x;
+  };
+  function loadSaved2() {
+    var x = localStorage.getItem("Appointment10AM");
+    document.getElementById("10AMInput").value = x;
+  };
+  function loadSaved3() {
+    var x = localStorage.getItem("Appointment11AM");
+    document.getElementById("11AMInput").value = x;
+  };
+  function loadSaved4() {
+    var x = localStorage.getItem("Appointment12PM");
+    document.getElementById("12PMInput").value = x;
+  };
+  function loadSaved5() {
+    var x = localStorage.getItem("Appointment01PM");
+    document.getElementById("01PMInput").value = x;
+  };
+  function loadSaved6() {
+    var x = localStorage.getItem("Appointment02PM");
+    document.getElementById("02PMInput").value = x;
+  };
+  function loadSaved7() {
+    var x = localStorage.getItem("Appointment03PM");
+    document.getElementById("03PMInput").value = x;
+  };
+  function loadSaved8() {
+    var x = localStorage.getItem("Appointment04PM");
+    document.getElementById("04PMInput").value = x;
+  };
+  function loadSaved9() {
+    var x = localStorage.getItem("Appointment05PM");
+    document.getElementById("05PMInput").value = x;
+  };
 
 // var saveButton2 = document.querySelector("#button-addon2");
 // var saveButton3 = document.querySelector("#button-addon3");
