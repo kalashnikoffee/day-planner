@@ -168,14 +168,6 @@ fivePMRowColorChage();
 //COLOR CHANGE END -----------------------------------------------------------------
 
 //LOCAL STORAGE SAVE -------------------------------------------------------------
-
-// var saveButton1 = document.querySelector("#button-addon1");
-
-// $("#button-addon1").on("click", function{
-
-// })
-
-//BAM OK NOW WE'RE GETTING SOMEWHERE
 document.getElementById("button-addon1").addEventListener("click", function(){
     var thingthing = document.getElementById("09AMInput").value;
     localStorage.setItem("Appointment09AM", thingthing);
@@ -267,15 +259,10 @@ function loadSaved1() {
     var x = localStorage.getItem("Appointment05PM");
     document.getElementById("05PMInput").value = x;
   };
+//LOCAL STORAGE SAVE END ------------------------------------------------------
 
-// var saveButton2 = document.querySelector("#button-addon2");
-// var saveButton3 = document.querySelector("#button-addon3");
-// var saveButton4 = document.querySelector("#button-addon4");
-// var saveButton5 = document.querySelector("#button-addon5");
-// var saveButton6 = document.querySelector("#button-addon6");
-// var saveButton7 = document.querySelector("#button-addon7");
-// var saveButton8 = document.querySelector("#button-addon8");
-// var saveButton9 = document.querySelector("#button-addon9");
-
-// var hour1Appointment=$("#09AMInput").find("input").value;
-// console.log(hour1Appointment);
+//Misc style changes--------------------------------------------
+$(".topTitle").attr("style", "text-align: center");
+$(".topClock").attr("style", "text-align: center");
+$(".topDate").attr("style", "text-align: center");
+// $(".titleBox").attr("style", "margin: 0 auto");
