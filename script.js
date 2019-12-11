@@ -266,4 +266,5 @@ $(".topTitle").attr("style", "text-align: center");
 $(".topClock").attr("style", "text-align: center");
 $(".topDate").attr("style", "text-align: center");
 // $(".titleBox").attr("style", "margin: 0 auto");
-$("body").attr("style", 'background-image: url(assets/images/spikes.png)') //help
+$("body").attr("style", 'background-image: url(assets/images/spikes.png); font-family: "Alatsi", sans-serif;'); //help
+// $("body").attr("style", "font-family: 'Alatsi', sans-serif;");
