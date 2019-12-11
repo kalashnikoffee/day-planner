@@ -266,3 +266,4 @@ $(".topTitle").attr("style", "text-align: center");
 $(".topClock").attr("style", "text-align: center");
 $(".topDate").attr("style", "text-align: center");
 // $(".titleBox").attr("style", "margin: 0 auto");
+$("body").attr("style", 'background-image: url(assets/images/spikes.png)') //help
