@@ -41,10 +41,10 @@ updateClock(); setInterval('updateClock()', 1000 );
 
 function nineAMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 9){
+    if (momentTime.format("HH") == 9){
         $("#09AMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 9){
+    else if(momentTime.format("HH") > 9){
         $("#09AMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -55,10 +55,10 @@ nineAMRowColorChage();
 
 function tenAMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 10){
+    if (momentTime.format("HH") == 10){
         $("#10AMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 10){
+    else if(momentTime.format("HH") > 10){
         $("#10AMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -69,10 +69,10 @@ tenAMRowColorChage();
 
 function elvnAMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 11){
+    if (momentTime.format("HH") == 11){
         $("#11AMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 11){
+    else if(momentTime.format("HH") > 11){
         $("#11AMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -83,10 +83,10 @@ elvnAMRowColorChage();
 
 function twelvePMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 12){
+    if (momentTime.format("HH") == 12){
         $("#12PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 12){
+    else if(momentTime.format("HH") > 12){
         $("#12PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -97,10 +97,10 @@ twelvePMRowColorChage();
 
 function onePMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 13){
+    if (momentTime.format("HH") == 13){
         $("#01PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 13){
+    else if(momentTime.format("HH") > 13){
         $("#01PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -111,10 +111,10 @@ onePMRowColorChage();
 
 function twoPMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 14){
+    if (momentTime.format("HH") == 14){
         $("#02PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 14){
+    else if(momentTime.format("HH") > 14){
         $("#02PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -125,10 +125,10 @@ twoPMRowColorChage();
 
 function threePMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 15){
+    if (momentTime.format("HH") == 15){
         $("#03PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 15){
+    else if(momentTime.format("HH") > 15){
         $("#03PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -139,10 +139,10 @@ threePMRowColorChage();
 
 function fourPMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 16){
+    if (momentTime.format("HH") == 16){
         $("#04PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 16){
+    else if(momentTime.format("HH") > 16){
         $("#04PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
@@ -153,10 +153,10 @@ fourPMRowColorChage();
 
 function fivePMRowColorChage() {
     var currentTime = new Date().getHours();
-    if (currentTime == 17){
+    if (momentTime.format("HH") == 17){
         $("#05PMInput").attr("style", "background-color: #c6ffb3");
     }
-    else if(currentTime > 17){
+    else if(momentTime.format("HH") > 17){
         $("#05PMInput").attr("style", "background-color: #d0d0e1");
     }
     else{
